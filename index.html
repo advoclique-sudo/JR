@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JR Advocacia — Advocacia Criminal</title>
+<meta name="description" content="Está enfrentando um problema criminal? Prisão em flagrante, audiência de custódia, inquérito, intimação ou processo: entenda seus direitos e o que pode ser feito no seu caso. JR Advocacia — Barra do Garças/MT.">
+<meta property="og:title" content="JR Advocacia — Advocacia Criminal">
+<meta property="og:description" content="Investigação, prisão ou processo criminal exigem atenção desde o início. Entenda seus direitos e o que pode ser feito no seu caso.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta name="theme-color" content="#0B0D0F">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%236E1723'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' fill='%23F4F4F2' text-anchor='middle'%3EJR%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- =========================================================
+     JR ADVOCACIA — Landing page de Advocacia Criminal
+     ---------------------------------------------------------
+     • Para trocar o número do WhatsApp: buscar e substituir
+       5566999827054 por todo o arquivo.
+     • GTM / Pixel: colar os snippets logo abaixo desta nota.
+     ========================================================= -->
+
+<style>
+:root{
+  --carvao:#0B0D0F;
+  --grafite:#171A1D;
+  --bordo:#6E1723;
+  --bordo-claro:#8A1D2D;
+  --gelo:#F4F4F2;
+  --cinza:#B6B6B6;
+  --cinza-escuro:#7C7C7A;
+  --linha:rgba(244,244,242,.10);
+  --linha-forte:rgba(244,244,242,.2);
+  --wa:#25D366;
+  --serif:'Instrument Serif',Georgia,'Times New Roman',serif;
+  --sans:'Manrope',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --largura:1180px;
+  --gutter:clamp(16px,4vw,40px);
+  --secao:clamp(56px,7vw,92px);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--carvao);color:var(--gelo);font-family:var(--sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+/* grão sutil, dá textura de filme ao fundo */
+body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.05;background:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+.container{width:min(100% - 2*var(--gutter),var(--largura));margin-inline:auto;position:relative;z-index:1}
+
+h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.01em;line-height:1.06}
+h1{font-size:clamp(2.7rem,6.6vw,5.4rem)}
+h2{font-size:clamp(2rem,4vw,3.3rem)}
+h3{font-size:1.45rem;line-height:1.2}
+h1 em,h2 em{font-style:italic;color:inherit}
+
+.eyebrow{font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--cinza);display:inline-flex;align-items:center;gap:12px;font-weight:600}
+.eyebrow::before{content:"";width:28px;height:1px;background:var(--bordo)}
+@media(max-width:480px){.hero .eyebrow{font-size:.6rem;letter-spacing:.14em}}
+.lead{color:var(--cinza);font-size:clamp(1.02rem,1.4vw,1.18rem);line-height:1.65;max-width:58ch}
+.nota{font-size:.82rem;color:var(--cinza-escuro);margin-top:14px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;background:var(--bordo);color:var(--gelo);font-weight:700;font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;padding:19px 34px;border:1px solid transparent;transition:background .2s,transform .2s;white-space:nowrap;cursor:pointer}
+.btn:hover{background:var(--bordo-claro);transform:translateY(-1px)}
+.btn svg{width:18px;height:18px;flex:none}
+@media(max-width:480px){.btn{width:100%;white-space:normal;text-align:center;padding:18px 22px}}
+
+.secao{position:relative;padding-block:var(--secao);z-index:1}
+.secao-grafite{background:var(--grafite)}
+.cabecalho{margin-bottom:clamp(36px,5vw,56px);max-width:780px}
+.cabecalho h2{margin-top:18px}
+.cta-centro{margin-top:clamp(36px,5vw,56px);text-align:center}
+
+/* ---------- Topo ---------- */
+.topo{position:sticky;top:0;z-index:50;background:rgba(11,13,15,.8);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--linha)}
+.topo .container{display:flex;align-items:center;justify-content:space-between;height:70px}
+.marca{display:flex;flex-direction:column;line-height:1}
+.marca strong{font-family:var(--serif);font-size:1.4rem;letter-spacing:.08em;font-weight:400}
+.marca span{font-size:.6rem;letter-spacing:.26em;text-transform:uppercase;color:var(--cinza);margin-top:6px}
+.topo-cta{display:flex;align-items:center;gap:22px}
+.topo-fone{font-size:.88rem;color:var(--cinza)}
+.topo-fone:hover{color:var(--gelo)}
+.topo .btn{padding:12px 20px;font-size:.68rem}
+@media(max-width:640px){.topo-fone{display:none}.topo .btn{width:auto}}
+
+/* ---------- Hero (tipográfico, sem foto) ---------- */
+.hero{padding-block:clamp(64px,9vw,120px) clamp(56px,7vw,96px);overflow:hidden;text-align:center}
+.hero h1{margin:24px auto 26px;max-width:17ch}
+.hero .lead{margin-inline:auto}
+.hero-acoes{margin-top:36px;display:flex;flex-direction:column;align-items:center;gap:14px}
+.hero-acoes .nota{margin:0}
+.pilares{margin-top:clamp(48px,7vw,88px);display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--linha-forte)}
+.pilares li{padding:22px 24px 0;border-right:1px solid var(--linha)}
+.pilares li:last-child{border-right:0}
+.pilares strong{display:block;font-family:var(--serif);font-size:1.4rem;font-weight:400;margin-bottom:4px}
+.pilares span{color:var(--cinza);font-size:.9rem}
+.anim{opacity:0;transform:translateY(16px);animation:sobe .8s cubic-bezier(.2,.7,.2,1) forwards}
+.anim:nth-child(2){animation-delay:.1s}
+.anim:nth-child(3){animation-delay:.2s}
+.anim:nth-child(4){animation-delay:.3s}
+.anim:nth-child(5){animation-delay:.4s}
+@keyframes sobe{to{opacity:1;transform:none}}
+@media(max-width:760px){
+  .pilares{grid-template-columns:1fr;border-top:0}
+  .pilares li{border-right:0;padding:16px 0;border-top:1px solid var(--linha)}
+}
+
+/* ---------- Situações (cards) ---------- */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--linha);border:1px solid var(--linha)}
+.card{background:var(--grafite);padding:clamp(24px,3vw,36px);position:relative;transition:background .25s}
+.card:hover{background:var(--carvao)}
+.card::before{content:"";position:absolute;left:0;top:0;width:2px;height:0;background:var(--bordo);transition:height .35s}
+.card:hover::before{height:100%}
+.card .num{font-family:var(--serif);font-size:.95rem;color:var(--cinza-escuro);letter-spacing:.08em;margin-bottom:22px;display:flex;align-items:center;gap:12px}
+.card .num::after{content:"";flex:1;height:1px;background:var(--linha)}
+.card h3{margin-bottom:10px}
+.card p{color:var(--cinza);font-size:.95rem}
+@media(max-width:900px){.cards{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.cards{grid-template-columns:1fr}}
+
+/* ---------- Atuação ---------- */
+.areas{display:grid;grid-template-columns:repeat(3,1fr);column-gap:clamp(24px,4vw,56px);border-top:1px solid var(--linha)}
+.areas li{padding:14px 0;border-bottom:1px solid var(--linha);font-size:.98rem;display:flex;gap:14px;align-items:center}
+.areas li::before{content:"";width:5px;height:5px;background:var(--bordo);flex:none}
+.areas-rodape{margin-top:clamp(36px,5vw,56px);display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center;padding:clamp(24px,3vw,36px);border:1px solid var(--linha);background:var(--grafite)}
+.areas-rodape h3{margin-bottom:6px}
+.areas-rodape p{color:var(--cinza);font-size:.95rem;max-width:52ch}
+@media(max-width:900px){.areas{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){
+  /* no celular a lista vira "etiquetas" compactas */
+  .areas{display:flex;flex-wrap:wrap;gap:8px;border-top:0}
+  .areas li{border:1px solid var(--linha-forte);padding:9px 13px;font-size:.84rem;gap:10px;background:var(--grafite)}
+  .areas li::before{width:4px;height:4px}
+  .areas-rodape{grid-template-columns:1fr}
+}
+
+/* ---------- Como funciona ---------- */
+.passos{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,4vw,56px);counter-reset:passo}
+.passo{border-top:1px solid var(--linha-forte);padding-top:24px}
+.passo::before{counter-increment:passo;content:"0" counter(passo);font-family:var(--serif);font-size:2.8rem;line-height:1;display:block;margin-bottom:18px}
+.passo h3{font-family:var(--sans);font-size:1rem;font-weight:700;margin-bottom:8px}
+.passo p{color:var(--cinza);font-size:.95rem}
+@media(max-width:800px){.passos{grid-template-columns:1fr;gap:24px}}
+
+/* ---------- FAQ ---------- */
+.faq{max-width:840px}
+.faq details{border-top:1px solid var(--linha)}
+.faq details:last-child{border-bottom:1px solid var(--linha)}
+.faq summary{list-style:none;cursor:pointer;padding:20px 0;display:flex;justify-content:space-between;align-items:center;gap:24px;font-family:var(--serif);font-size:clamp(1.15rem,1.6vw,1.45rem);line-height:1.25}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--serif);font-size:1.7rem;color:var(--cinza);flex:none;width:28px;height:28px;display:grid;place-items:center;transition:transform .25s,color .25s}
+.faq details[open] summary::after{transform:rotate(45deg);color:var(--gelo)}
+.faq details p{color:var(--cinza);padding:0 52px 22px 0;font-size:.98rem}
+
+/* ---------- CTA final (alto contraste) ---------- */
+.final{background:var(--gelo);color:var(--carvao);text-align:center}
+.final .eyebrow{color:#6f6f6d}
+.final h2{max-width:16ch;margin:18px auto 0}
+.final .sub{color:#4a4a48;max-width:50ch;margin:22px auto 36px;font-size:1.08rem}
+.final .btn{padding:22px 46px;font-size:.84rem}
+.final .nota{color:#6f6f6d}
+
+/* ---------- Rodapé ---------- */
+.rodape{border-top:1px solid var(--linha);padding:clamp(40px,5vw,60px) 0 112px}
+.rodape .container{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px;font-size:.88rem;color:var(--cinza)}
+.rodape strong{display:block;font-family:var(--serif);font-size:1.35rem;letter-spacing:.08em;color:var(--gelo);font-weight:400}
+.rodape .sub{font-size:.6rem;letter-spacing:.26em;text-transform:uppercase;color:var(--cinza-escuro);margin:6px 0 16px}
+.rodape .sobre{max-width:44ch;font-size:.9rem}
+.rodape .titulo{font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:var(--cinza-escuro);margin-bottom:14px;font-weight:600}
+.rodape ul{display:grid;gap:8px}
+.rodape a:hover{color:var(--gelo)}
+.rodape .legal{grid-column:1/-1;margin-top:20px;padding-top:20px;border-top:1px solid var(--linha);font-size:.74rem;color:var(--cinza-escuro);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:760px){.rodape .container{grid-template-columns:1fr;gap:28px}}
+
+/* ---------- Botão flutuante ---------- */
+.flutuante{position:fixed;right:20px;bottom:20px;z-index:60;width:58px;height:58px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 12px 32px rgba(0,0,0,.5);transition:transform .2s}
+.flutuante:hover{transform:scale(1.07)}
+.flutuante svg{width:30px;height:30px;fill:#fff}
+
+/* ---------- Revelação no scroll ---------- */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .75s ease,transform .75s ease}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  .reveal,.anim{opacity:1;transform:none;transition:none;animation:none}
+}
+</style>
+</head>
+<body>
+
+<!-- Ícones reutilizáveis -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></symbol>
+  <symbol id="i-seta" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<!-- =========================================================
+     TOPO
+     ========================================================= -->
+<header class="topo">
+  <div class="container">
+    <a class="marca" href="#inicio" aria-label="JR Advocacia — início">
+      <strong>JR ADVOCACIA</strong>
+      <span>Advocacia Criminal</span>
+    </a>
+    <div class="topo-cta">
+      <a class="topo-fone" href="tel:+5566999827054">(66) 99982-7054</a>
+      <a class="btn js-wa" href="https://wa.me/5566999827054?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20JR%20Advocacia%20e%20preciso%20de%20orienta%C3%A7%C3%A3o%20sobre%20uma%20situa%C3%A7%C3%A3o%20criminal." target="_blank" rel="noopener">Atendimento</a>
+    </div>
+  </div>
+</header>
+
+<!-- =========================================================
+     HERO
+     ========================================================= -->
+<section class="secao hero" id="inicio">
+  <div class="container">
+    <span class="eyebrow anim"><span>Advocacia Criminal · Barra do Garças/MT</span></span>
+    <h1 class="anim">Está enfrentando um problema criminal e <em>não sabe o que fazer?</em></h1>
+    <p class="lead anim">Investigação, prisão ou processo criminal exigem atenção desde o início. Entenda seus direitos e o que pode ser feito no seu caso.</p>
+    <div class="hero-acoes anim">
+      <a class="btn js-wa" href="https://wa.me/5566999827054?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20JR%20Advocacia%20e%20preciso%20de%20orienta%C3%A7%C3%A3o%20sobre%20uma%20situa%C3%A7%C3%A3o%20criminal." target="_blank" rel="noopener">
+        Iniciar atendimento <svg aria-hidden="true"><use href="#i-seta"/></svg>
+      </a>
+      <p class="nota">Atendimento com discrição e análise individual do caso.</p>
+    </div>
+    <ul class="pilares anim">
+      <li><strong>Atendimento individual</strong><span>Cada caso é analisado separadamente.</span></li>
+      <li><strong>Discrição</strong><span>Sigilo desde o primeiro contato.</span></li>
+      <li><strong>Análise técnica</strong><span>Orientação com base nos fatos e nas provas.</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- =========================================================
+     SITUAÇÕES
+     ========================================================= -->
+<section class="secao secao-grafite" id="situacoes">
+  <div class="container">
+    <div class="cabecalho reveal">
+      <span class="eyebrow">Situações</span>
+      <h2>Você ou alguém da sua família está passando por <em>alguma dessas situações?</em></h2>
+    </div>
+
+    <div class="cards reveal">
+      <article class="card">
+        <div class="num">01</div>
+        <h3>Prisão em flagrante</h3>
+        <p>As primeiras providências definem os próximos passos.</p>
+      </article>
+      <article class="card">
+        <div class="num">02</div>
+        <h3>Audiência de custódia</h3>
+        <p>A pessoa presa é apresentada ao Judiciário, que analisa a prisão.</p>
+      </article>
+      <article class="card">
+        <div class="num">03</div>
+        <h3>Investigação ou inquérito</h3>
+        <p>Foi chamado para esclarecimentos ou descobriu uma investigação.</p>
+      </article>
+      <article class="card">
+        <div class="num">04</div>
+        <h3>Intimação da delegacia</h3>
+        <p>Antes de depor, entenda o motivo e os seus direitos.</p>
+      </article>
+      <article class="card">
+        <div class="num">05</div>
+        <h3>Processo criminal</h3>
+        <p>A acusação exige análise das provas e das defesas possíveis.</p>
+      </article>
+      <article class="card">
+        <div class="num">06</div>
+        <h3>Familiar preso</h3>
+        <p>A família não sabe onde buscar informação nem o que fazer.</p>
+      </article>
+    </div>
+
+    <div class="cta-centro reveal">
+      <a class="btn js-wa" href="https://wa.me/5566999827054?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20JR%20Advocacia%20e%20quero%20entender%20meu%20caso." target="_blank" rel="noopener">
+        Quero entender meu caso <svg aria-hidden="true"><use href="#i-seta"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     ATUAÇÃO
+     ========================================================= -->
+<section class="secao" id="atuacao">
+  <div class="container">
+    <div class="cabecalho reveal">
+      <span class="eyebrow">Atuação</span>
+      <h2>Atuação em diferentes situações da <em>área criminal</em></h2>
+    </div>
+
+    <ul class="areas reveal">
+      <li>Prisão em flagrante</li>
+      <li>Audiência de custódia</li>
+      <li>Inquérito policial</li>
+      <li>Delegacia e acompanhamento de depoimentos</li>
+      <li>Habeas corpus</li>
+      <li>Crimes contra o patrimônio</li>
+      <li>Furto e roubo</li>
+      <li>Crimes relacionados à Lei de Drogas</li>
+      <li>Porte ou posse ilegal de armas</li>
+      <li>Crimes contra a pessoa</li>
+      <li>Violência doméstica e Lei Maria da Penha</li>
+      <li>Tribunal do Júri</li>
+      <li>Execução penal</li>
+      <li>Progressão de regime</li>
+      <li>Processos e defesas criminais</li>
+    </ul>
+
+    <div class="areas-rodape reveal">
+      <div>
+        <h3>Não encontrou sua situação?</h3>
+        <p>Cada caso tem particularidades. Fale conosco para verificar o atendimento.</p>
+      </div>
+      <a class="btn js-wa" href="https://wa.me/5566999827054?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20JR%20Advocacia.%20Minha%20situa%C3%A7%C3%A3o%20n%C3%A3o%20est%C3%A1%20na%20lista%20e%20gostaria%20de%20verificar%20a%20possibilidade%20de%20atendimento." target="_blank" rel="noopener">
+        Falar com a JR Advocacia <svg aria-hidden="true"><use href="#i-seta"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     COMO FUNCIONA
+     ========================================================= -->
+<section class="secao secao-grafite" id="como-funciona">
+  <div class="container">
+    <div class="cabecalho reveal">
+      <span class="eyebrow">Primeiro atendimento</span>
+      <h2>Como funciona o <em>primeiro atendimento</em></h2>
+    </div>
+
+    <div class="passos reveal">
+      <div class="passo">
+        <h3>Você explica a situação</h3>
+        <p>Resuma o que aconteceu: prisão, intimação, audiência ou processo.</p>
+      </div>
+      <div class="passo">
+        <h3>O cenário é analisado</h3>
+        <p>Informações e documentos são avaliados.</p>
+      </div>
+      <div class="passo">
+        <h3>Próximos passos</h3>
+        <p>Você recebe os possíveis caminhos jurídicos para o caso.</p>
+      </div>
+    </div>
+
+    <div class="cta-centro reveal">
+      <a class="btn js-wa" href="https://wa.me/5566999827054?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20JR%20Advocacia%20e%20quero%20iniciar%20o%20atendimento." target="_blank" rel="noopener">
+        <svg aria-hidden="true"><use href="#i-wa"/></svg> Iniciar atendimento pelo WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     FAQ
+     ========================================================= -->
+<section class="secao" id="faq">
+  <div class="container">
+    <div class="cabecalho reveal">
+      <span class="eyebrow">Perguntas comuns</span>
+      <h2>Dúvidas <em>frequentes</em></h2>
+    </div>
+
+    <div class="faq reveal">
+      <details>
+        <summary>Um familiar foi preso. O que devo fazer?</summary>
+        <p>Identifique onde a pessoa está, o motivo da prisão e os procedimentos seguintes.</p>
+      </details>
+      <details>
+        <summary>O que acontece depois de uma prisão em flagrante?</summary>
+        <p>A prisão é formalizada e pode haver audiência de custódia, que analisa suas circunstâncias.</p>
+      </details>
+      <details>
+        <summary>Posso responder ao processo em liberdade?</summary>
+        <p>Depende das circunstâncias do caso e das decisões judiciais aplicáveis.</p>
+      </details>
+      <details>
+        <summary>Recebi uma intimação da delegacia. Preciso comparecer?</summary>
+        <p>O conteúdo da intimação deve ser analisado para orientar os próximos passos.</p>
+      </details>
+      <details>
+        <summary>Quanto custa o atendimento?</summary>
+        <p>Os honorários dependem da atuação necessária e são apresentados após a compreensão inicial do caso.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     CTA FINAL — alto contraste
+     ========================================================= -->
+<section class="secao final" id="contato">
+  <div class="container reveal">
+    <span class="eyebrow">Fale com o escritório</span>
+    <h2>Está enfrentando uma <em>situação criminal?</em></h2>
+    <p class="sub">Converse com a JR Advocacia e entenda quais medidas jurídicas podem ser analisadas no seu caso.</p>
+    <a class="btn js-wa" href="https://wa.me/5566999827054?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20JR%20Advocacia%20e%20preciso%20de%20orienta%C3%A7%C3%A3o%20sobre%20uma%20situa%C3%A7%C3%A3o%20criminal." target="_blank" rel="noopener">
+      Iniciar atendimento <svg aria-hidden="true"><use href="#i-seta"/></svg>
+    </a>
+    <p class="nota">Atendimento com discrição e análise individual.</p>
+  </div>
+</section>
+
+<!-- =========================================================
+     RODAPÉ
+     ========================================================= -->
+<footer class="rodape">
+  <div class="container">
+    <div>
+      <strong>JR ADVOCACIA</strong>
+      <p class="sub">Advocacia Criminal</p>
+      <p class="sobre">Defesa e orientação em questões criminais, com atendimento individual, discrição e análise técnica de cada situação.</p>
+    </div>
+    <div>
+      <p class="titulo">Contato</p>
+      <ul>
+        <li><a href="https://wa.me/5566999827054" class="js-wa" target="_blank" rel="noopener">WhatsApp (66) 99982-7054</a></li>
+        <li><a href="mailto:junuiorcesarbg@gmail.com">junuiorcesarbg@gmail.com</a></li>
+        <li>Rua Carajás, 581, Sala 02 — Centro</li>
+        <li>Barra do Garças/MT</li>
+      </ul>
+    </div>
+    <div>
+      <p class="titulo">Informações</p>
+      <ul>
+        <li><a href="politica-de-privacidade.html">Política de Privacidade</a></li>
+        <li><a href="termos-de-uso.html">Termos de Uso</a></li>
+      </ul>
+    </div>
+    <div class="legal">
+      <span>© <span id="ano">2026</span> JR Advocacia. Todos os direitos reservados.</span>
+      <span>Conteúdo informativo, em conformidade com o Código de Ética e Disciplina da OAB e o Provimento 205/2021.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Botão flutuante -->
+<a class="flutuante js-wa" href="https://wa.me/5566999827054?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20JR%20Advocacia%20e%20preciso%20de%20orienta%C3%A7%C3%A3o%20sobre%20uma%20situa%C3%A7%C3%A3o%20criminal." target="_blank" rel="noopener" aria-label="Falar pelo WhatsApp">
+  <svg aria-hidden="true"><use href="#i-wa"/></svg>
+</a>
+
+<script>
+/* ---------------------------------------------------------
+   JS mínimo e isolado.
+   1) Ano automático no rodapé.
+   2) Revelação suave das seções ao rolar.
+   3) Evento "whatsapp_click" no dataLayer (GTM) a cada clique
+      em link de WhatsApp — útil para marcar conversão no
+      Google Ads / Meta Ads.
+   --------------------------------------------------------- */
+(function(){
+  var ano = document.getElementById('ano');
+  if (ano) ano.textContent = new Date().getFullYear();
+
+  var itens = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    var obs = new IntersectionObserver(function(entradas){
+      entradas.forEach(function(e){
+        if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); }
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: .08 });
+    itens.forEach(function(el){ obs.observe(el); });
+  } else {
+    itens.forEach(function(el){ el.classList.add('in'); });
+  }
+
+  window.dataLayer = window.dataLayer || [];
+  var links = document.querySelectorAll('.js-wa');
+  for (var i = 0; i < links.length; i++) {
+    links[i].addEventListener('click', function(){
+      var secao = this.closest('section, header, footer');
+      window.dataLayer.push({
+        event: 'whatsapp_click',
+        wa_label: (this.textContent || this.getAttribute('aria-label') || '').trim().replace(/\s+/g,' ').slice(0,80),
+        wa_section: secao ? (secao.id || secao.className || secao.tagName).toString().split(' ')[0] : 'flutuante'
+      });
+    });
+  }
+})();
+</script>
+</body>
+</html>
